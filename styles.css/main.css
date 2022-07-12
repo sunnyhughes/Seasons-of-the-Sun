@@ -1,0 +1,93 @@
+html {
+    display: block;
+}
+
+header {
+    display: block;
+    height: 100px;
+    background-color: purple;
+
+}
+
+body {
+    display:block;
+    flex-wrap:wrap;
+    font-family: Arial, Helvetica, sans-serif;
+     background-image:"/Pictures for project/meandmont.jpg";
+
+}
+
+ul {
+  list-style-type: none;
+  margin :0;
+  padding: 0;
+  
+}
+
+li a {
+  display: block;
+  width: 60px;
+}
+
+.button #hamburgerBtn { 
+   /* display: block;*/
+   background: none;
+   border: none;
+   color: #fff;
+   font-size: 2.4rem;
+   cursor: pointer;
+   padding: 0 30px 0 2vw;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+section {
+    display: block;
+
+}
+
+article {
+    display:block;
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+}
+
+
+p {
+    display: block;
+
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+
+.pic {
+  width: 600px;
+  height: 600px;
+}
+
