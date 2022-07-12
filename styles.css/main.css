@@ -1,5 +1,6 @@
 html {
-    display: block;
+    display: block;    
+   
 }
 
 header {
@@ -13,7 +14,7 @@ body {
     display:block;
     flex-wrap:wrap;
     font-family: Arial, Helvetica, sans-serif;
-     background-image:"/Pictures for project/meandmont.jpg";
+ 
 
 }
 
@@ -86,8 +87,9 @@ footer {
 
 
 
-.pic {
-  width: 600px;
-  height: 600px;
+#img {
+    display: block;
+    align-content: center;
+    width: 300px;
+    height: 300px;
 }
-
