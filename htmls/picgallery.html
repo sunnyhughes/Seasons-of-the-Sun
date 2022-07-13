@@ -10,59 +10,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="/mnt/chromeos/MyFiles/ Seasons of the Sun/android-chrome-512x512.png" href="favicon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/styles.css/main.css" media="screen">
-
+  <link rel="stylesheet" href="styles.css/main.css">
+  <link rel="stylesheet" href="styles.css/site.js">
 </head>
-
     <body>
-        <main>
-          <div class="mobile-container">
+
           <header>
             <h1>Seasons of the Sun: Picture Gallery</h1>
           </header> 
       
         <!-- Top Navigation Menu --> 
 
-        <nav class="clearfix">
-        <div class="row limited">
-        <button id="hamburgerBtn">&#9776;</button>
-       <ul id="primaryNav">  
-           <div id="myLinks"> 
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-             <li> <a href="childhood.html">Childhood</a></li>
-             <li><a href="youngparenthood.html">Young Parenthood</a></li>
-             <li><a href="youngparenthood(2).html">Young Parenthood (2)</a></li>
-             <li><a href="youngadulthood.html">Young Adulthood</a></li>
-              <li><a href="adulting.html">Adulting</a></li>
-              <li><a href="futuremama.html">Future Mama</a></li>
-              <li><a href="picgallery.html">Picture Gallery</a></li>
+    <nav>
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="childhood.html">Childhood</a>
+         <a href="youngparenthood.html">Young Parenthood</a>
+         <a href="youngparenthood(2).html">Young Parenthood (2)</a>
+         <a href="youngadulthood.html">Young Adulthood</a>
+         <a href="adulting.html">Adulting</a>
+         <a href="futuremama.html">Future Mama</a>
+         <a href="picgallery.html">Picture Gallery</a>
+     </nav>
 
-  
-  <div class=”flex-container”>
-  <div id="pic" class=”box”>1</div>
-  <div id="pic" class=”box”>2</div>
-  <div id="pic" class=”box”>3</div>
-  <div id="pic" class=”box”>4</div>
-  <div id="pic" class=”box”>5</div>
-  <div id="pic" class=”box”>6</div>
-  <div id="pic" class=”item7”>7</div>
-  <div id="pic" class=”item8”>8</div>
 
- </div>
+ <h2>Sunny's Image Gallery</h2>
 
-<script>
- function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-</script>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Pictures for project/Pictures for project/myboys.jpg">
+      <img src="Pictures for project/Pictures for project/myboys.jpg" alt="Me and the boys" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-  </main>
-</body>
- 
-  
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Pictures for project/cheesenbean.png">
+      <img src="Pictures for project/cheesenbean.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Pictures for project/Pictures for project/beanandlaney.jpg">
+      <img src="Pictures for project/Pictures for project/beanandlaney.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
