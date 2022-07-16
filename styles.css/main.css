@@ -3,14 +3,6 @@ html {
    
 }
 
-header {
-    display:block;
-    flex-direction: column;
-    height: 100px;
-    background-color: purple;
-
-}
-
 body {
     display:block;
     flex-wrap:wrap;
@@ -19,9 +11,16 @@ body {
     text-align:justify;
 }
 
+header {
+    display:block;
+    flex-direction: column;;
+    height: 100px;
+    background-color: purple;
+
+}
 
 h1 {
-  display: block;
+    display: block;
     text-align: center;
     flex-wrap: wrap;
     color: white;
