@@ -4,9 +4,8 @@ html {
 }
 
 header {
-    display: flex;
+    display:block;
     flex-direction: column;
-    flex-wrap: wrap;
     height: 100px;
     background-color: purple;
 
@@ -16,39 +15,20 @@ body {
     display:block;
     flex-wrap:wrap;
     font-family: Arial, Helvetica, sans-serif;
- 
-
-}
-/*ul {
-  list-style-type: none;
-  margin :0;
-  padding: 0;
-  
+    font-size: 16px;
+    text-align:justify;
 }
 
-li a {
-  display: block;
-  width: 60px;
-}
-
-.button #hamburgerBtn { 
-   /* display: block;*/
-  /* background: none;
-   border: none;
-   color: #fff;
-   font-size: 2.4rem;
-   cursor: pointer;
-   padding: 0 30px 0 2vw;
-}
-*/
 
 h1 {
+  display: block;
     text-align: center;
     flex-wrap: wrap;
     color: white;
     line-height: 100px;
     margin: 0;
 }
+
 
 nav {
    display: flex;
@@ -58,6 +38,8 @@ nav {
    border: 5px solid gold;
    padding:10px;
    margin: 10px;
+   list-style-type: none;
+
 }
 
 section {
@@ -82,7 +64,7 @@ h2 {
 
 p {
     display: block;
-    font-style: oblique;
+    
 }
 
 
@@ -96,7 +78,7 @@ footer {
 }
 
 figure {
-    display: flex;
+    display: block;
     flex-direction:column;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -105,58 +87,17 @@ figure {
 #img {
     display: block;
    justify-content: center;
-   width:200px;
+   width:100%;
    height:fit-content;
     padding: 10px;
     margin: 5px;
    
 }
 
-div.gallery {
-    border: 1px solid #ccc;
+/*
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+}
