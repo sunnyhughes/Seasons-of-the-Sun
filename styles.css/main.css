@@ -13,7 +13,8 @@ body {
 
 header {
     display:block;
-    flex-direction: column;;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 100px;
     background-color: purple;
 
@@ -30,17 +31,22 @@ h1 {
 
 
 nav {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   align-content: center;
-   border: 5px solid gold;
-   padding:10px;
-   margin: 10px;
-   list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:stretch;
+    border: 5px solid gold;
+    padding:10px;
+    margin: 10px;
+    list-style-type: none;
+ }
 
-}
-
+ div {
+    border: 5px outset red;
+    background-color: lightblue;    
+    text-align: center;
+ }
+ 
 section {
     display: block;
 
@@ -51,7 +57,7 @@ article {
     display:block;
     padding: 10px;
     margin: 10px;
-    background: aqua;
+    background: rgb(77, 236, 236);
 
 }
 
@@ -100,3 +106,7 @@ figure {
     flex-direction: column;
   }
 }
+
+a:link {color:#ff0000;text-decoration:none;}
+a:visited {color:#0000ff;text-decoration:none;}
+a:hover {text-decoration:underline;}
