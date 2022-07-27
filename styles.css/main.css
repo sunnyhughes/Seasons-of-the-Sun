@@ -21,9 +21,8 @@ header {
 }
 
 h1 {
-    display: block;
-    text-align: center;
-    flex-wrap: wrap;
+    text-align: center; 
+    flex-wrap: nowrap;
     color: white;
     line-height: 100px;
     margin: 0;
@@ -31,7 +30,7 @@ h1 {
 
 
 nav {
-    display: flex;
+    display: block;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content:stretch;
@@ -39,17 +38,47 @@ nav {
     padding:10px;
     margin: 10px;
     list-style-type: none;
- }
+}
 
- div {
-    border: 5px outset red;
-    background-color: lightblue;    
-    text-align: center;
- }
- 
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+  /* color: black;*/
+  }
+  
+  .active {
+    background-color: lightsteelblue;
+    /*color: white;*/
+  }
+
+
 section {
     display: block;
-
 
 }
 
@@ -57,8 +86,12 @@ article {
     display:block;
     padding: 10px;
     margin: 10px;
-    background: rgb(77, 236, 236);
+    background: rgb(84, 177, 177) ;
 
+}
+#resources {
+  border: 5px solid rosybrown;
+  background-color: lavenderblush;
 }
 
 h2 {
@@ -74,7 +107,7 @@ p {
 
 
 footer {
-    display: flex;
+    display: block;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -82,31 +115,16 @@ footer {
     padding: 5px;
 }
 
-figure {
-    display: block;
-    flex-direction:column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 
-#img {
-    display: block;
-   justify-content: center;
-   width:100%;
-   height:fit-content;
-    padding: 10px;
-    margin: 5px;
-   
-}
-
-
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 
-a:link {color:#ff0000;text-decoration:none;}
-a:visited {color:#0000ff;text-decoration:none;}
-a:hover {text-decoration:underline;}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}

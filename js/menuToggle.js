@@ -1,33 +1,30 @@
-  function toggleMenu() {
+function toggleMenu() {
     document.getElementById("topNav").classList.toggle ("open")
-    ("open")
 }
-
 let x = document.getElementById('hamburgerBtn');
     x.onclick = toggleMenu;
 
- /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+ /* toggle between showing and hiding the menu when the user click on the hamburger menu */
 
-function myFunction() {
-    var x = document.getElementById("topNav");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+ function myFunction() {
+        var x = document.getElementById("topNav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
 
-// This is the js for table
+ function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
 
-// Get the elements with class="column"
+      // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
 
 // Declare a loop variable
@@ -67,3 +64,4 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
